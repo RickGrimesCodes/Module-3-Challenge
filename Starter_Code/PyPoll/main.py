@@ -9,6 +9,7 @@ with open(pyPollCSV, 'r') as PyPoll:
     column3List = [row[2] for row in csvreader ]
 "making a dictionary to store the votes count with a for if loop"
 rowCount =(len(column3List))
+
 votecount = {}
 
 for items in column3List:
@@ -16,7 +17,13 @@ for items in column3List:
         votecount[items] += 1
     else:
         votecount[items] = 1
+
+winner = max(votecount, key=votecount.get())
+
 outputTemp = ""
 for items, votecount in votecount.items():
-    outputTemp += (f"{items}: {(votecount/ rowCount)*100}% ({votecount})\n")
+    outputTemp += (f"{items}: {((votecount/ rowCount)*100):,.2f}% ({votecount})\n")
 print(outputTemp)
+
+
+print(winner)
