@@ -4,24 +4,23 @@ import csv
 
 "here goes somthing maybe"
 PyBankCSV = os.path.join('Resources' , 'budget_data.csv')
-rowCount = 0
 with open(PyBankCSV, 'r') as PyBanks:
-    for line in PyBanks:
-        rowCount += 1
-rowCount -= 1
-with open(PyBankCSV, 'r') as PyBanks:
-    reader = csv.reader(PyBanks)
-    next(reader, None)
-    column2List = [row[1] for row in reader ]
+    csvreader2 = csv.reader(PyBanks)
+    next(csvreader2, None)
+    column2List = [row[1] for row in csvreader2 ]
 column2List = [int(num.strip("'")) for num in column2List]
+rowCount = len(column2List)
 ProfitTotal = sum(column2List)
-print(ProfitTotal)
-print("Finacial Analysis")
-print(rowCount)
-print("-" * 25)
+ProfitMax = max(column2List)
+ProfitMin = min(column2List)
 
-print("Total Months: ")
-print("Total: ")
-print("Average Change: ")
-print("Greatest Increase in Profits: ")
-print("Greatest Decrease in profits: ")
+changes = [column2List[i+1] - column2List[i] for i in range(len(column2List)-1)]
+averageChange = sum(changes) / len(changes)
+output = ()
+        f"\n Finacial Analysis \n"
+        f" - {* 25}\n"
+        f"\nTotal Months: {rowCount}"
+        f"\nTotal: ${ProfitTotal}"
+        f"\nAverage Change: ${averageChange}.2f""
+        f"\nGreatest Increase in Profits: ${ProfitMax}"
+        f"\nGreatest Decrease in profits: ${ProfitMin}")
