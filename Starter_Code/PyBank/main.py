@@ -7,7 +7,7 @@ PyBankCSV = os.path.join('Resources' , 'budget_data.csv')
 with open(PyBankCSV, 'r') as PyBanks:
     csvreader = csv.reader(PyBanks)
     next(csvreader, None)
-    column2List = [row[1] for row in csvreader2 ]
+    column2List = [row[1] for row in csvreader ]
 column2List = [int(num.strip("'")) for num in column2List]
 rowCount = len(column2List)
 ProfitTotal = sum(column2List)
@@ -27,6 +27,6 @@ output =(
     )
 
 print(output)
-
-with open ('PyBankOutput.txt','w') as file:
+FileOutput = os.path.join('Analysis' , 'PyBankOutput.txt')
+with open (FileOutput,'w') as file:
     file.write(output)
