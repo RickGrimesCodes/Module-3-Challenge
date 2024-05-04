@@ -6,5 +6,5 @@ Hopefully this is a good submission and my code works well, thanks for checking 
 
 https://github.com/RickGrimesCodes/Module-3-Challenge/screenshotsScreenrecordings/161536912/85d83bda-f290-4b60-b82c-b15c30cee10e
 
-![Screenshot 2024-05-03 215532](https://github.com/RickGrimesCodes/Module-3-Challenge/screenshotsScreenrecordings/Screenshot 2024-05-03 215532.png)
-![Screenshot 2024-05-03 215608](https://github.com/RickGrimesCodes/Module-3-Challenge/sscreenshotsScreenrecordings/Screenshot 2024-05-03 215608.png)
+![Screenshot 2024-05-03 215532](https://github.com/RickGrimesCodes/Module-3-Challenge/blob/main/screenshotsScreenrecordings/Screenshot%202024-05-03%20215532.png)
+![Screenshot 2024-05-03 215608](https://github.com/RickGrimesCodes/Module-3-Challenge/blob/main/screenshotsScreenrecordings/Screenshot%202024-05-03%20215532.png)
