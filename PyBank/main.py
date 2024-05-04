@@ -4,7 +4,7 @@ import csv
 
 #here goes somthing... maybe
 PyBankCSV = os.path.join('Resources' , 'budget_data.csv')
-# My goal was to use as few for loops as posable, so I converted column 2 into a list.
+# My goal was to use as few for loops as posible, so I converted column 2 into a list.
 with open(PyBankCSV, 'r') as PyBanks:
     csvreader = csv.reader(PyBanks)
     next(csvreader, None)

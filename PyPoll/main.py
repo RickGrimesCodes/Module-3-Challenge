@@ -18,6 +18,7 @@ for items in column3List:
     else:
         votecount[items] = 1
 votecount = votecount
+
 winner = max(votecount, key=votecount.get)
 # another for loop that creates a entry with politician, vote percentage, and votecount, and dumps it into a 'temporary' output string.
 outputTemp = ""
